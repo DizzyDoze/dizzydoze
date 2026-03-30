@@ -12,7 +12,6 @@ pub fn process() {
         // ID
         "name:       dizzydoze",
         "role:       Full Stack AI/ML Engineer",
-        "status:     MS Computer Science @ USF, graduating May 2026",
         "trait:      efficiency obsession",
         "trait:      depth-first learner",
 
