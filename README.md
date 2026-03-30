@@ -1,16 +1,49 @@
-## Hi there 👋
+```rust
+use std::thread;
+use rayon::prelude::*;
 
-<!--
-**DizzyDoze/dizzydoze** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+pub fn process() {
+    let pool = rayon::ThreadPoolBuilder::new()
+        .num_threads(32)
+        .build()
+        .unwrap();
 
-Here are some ideas to get you started:
+    let facts: Vec<&str> = vec![
+        // ID
+        "name:       dizzydoze",
+        "role:       Full Stack AI/ML Engineer",
+        "status:     MS Computer Science @ USF, graduating May 2026",
+        "trait:      efficiency obsession",
+        "trait:      depth-first learner",
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+        // TECH STACK
+        "lan:        Python, TypeScript, JavaScript, Java, Golang, SQL, Shell, Rust",
+        "ai/ml:      LangChain, LangGraph, Agentic AI, MCP, RAG, pgvector, LLM Fine-tuning, Prompt Engineering, PyTorch, TensorFlow, MLflow, LangSmith, Cohere, Bedrock",
+        "Backend:    FastAPI, Flask, Django, Node.js, REST APIs, WebSocket, SSE, Microservices, System Design",
+        "Frontend:   React, Next.js, TypeScript, Vite, TailwindCSS, Material UI, Redux",
+        "Data & DB:  PostgreSQL, MySQL, MongoDB, Redis, Elasticsearch, Vector Databases (pgvector)",
+        "DevOps:     AWS (ECS, ECR, S3, RDS, Lambda, VPC, Cognito, Bedrock), Docker, Kubernetes, Nginx, CI/CD, Git, Linux",
+
+        // GAMING
+        "game:       Competitive FPS | RPG | Sci-Fi | Horror | Simulator",
+
+        // SITE
+        "link:       https://neuralripper.com",
+    ];
+
+    let results: Vec<&str> = pool.install(|| {
+        facts.par_iter().map(|fact| {
+            let tid = thread::current().id();
+            println!("[{:?}]  dizzydoze ++ {}", tid, fact);
+            *fact
+        }).collect()
+    });
+
+    println!("{} attributes loaded across 32 threads.", results.len());
+    println!("dizzydoze is fully initialized.");
+}
+
+fn main() {
+    process();
+}
+```
