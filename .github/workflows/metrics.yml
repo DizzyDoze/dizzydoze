@@ -26,7 +26,7 @@ jobs:
 
           config_display: columns
           config_timezone: America/Los_Angeles
-          config_padding: 0, 8 + 18%
+          config_padding: 6 + 10%, 8 + 18%
           
           plugin_habits: yes
           plugin_habits_charts_type: classic
@@ -41,8 +41,8 @@ jobs:
           
           plugin_languages: yes
           plugin_languages_indepth: yes
-          plugin_languages_analysis_timeout: 30
-          plugin_languages_analysis_timeout_repositories: 15
+          plugin_languages_analysis_timeout: 120
+          plugin_languages_analysis_timeout_repositories: 60
           plugin_languages_categories: markup, programming
           plugin_languages_colors: github
           plugin_languages_limit: 8
