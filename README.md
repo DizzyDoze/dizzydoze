@@ -2,6 +2,9 @@
   <img src="/dizzydoze-multicolor.svg" alt="logo" />
 </div>
 
+<picture>
+  <img src="/github-metrics.svg" alt="Metrics">
+</picture>
 
 ```rust
 use std::thread;
