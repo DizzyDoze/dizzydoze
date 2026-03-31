@@ -19,7 +19,7 @@ jobs:
 
           # Options
           template: terminal
-          base: header, activity, repositories, metadata
+          base: header, activity, metadata
           
           # HIDES PRIVATE REPO NAMES while keeping their stats
           repositories_affiliations: owner, collaborator
