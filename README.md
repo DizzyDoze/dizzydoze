@@ -2,10 +2,6 @@
   <img src="/dizzydoze-multicolor.svg" alt="logo" />
 </div>
 
-<div align="center">
-  <img src="/github-metrics.svg" alt="Metrics">
-</div>
-
 ```rust
 use std::thread;
 use rayon::prelude::*;
