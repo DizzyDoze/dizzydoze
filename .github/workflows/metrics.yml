@@ -24,9 +24,10 @@ jobs:
           # HIDES PRIVATE REPO NAMES while keeping their stats
           repositories_affiliations: owner, collaborator
 
+          commits_authoring: YJ, DizzyDoze, overdosedizzy@gmail.com, 106438058+DizzyDoze@users.noreply.github.com
           config_display: columns
           config_timezone: America/Los_Angeles
-          config_padding: 6 + 10%, 8 + 18%
+          config_padding: 6 + 30%, 8 + 18%
           
           plugin_habits: yes
           plugin_habits_charts_type: classic
