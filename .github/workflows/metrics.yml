@@ -26,6 +26,7 @@ jobs:
 
           config_display: columns
           config_timezone: America/Los_Angeles
+          config_padding: 0, 8 + 18%
           
           plugin_activity: yes
           plugin_activity_days: 14
