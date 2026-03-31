@@ -1,3 +1,8 @@
+<div align="center">
+  <img src="/dizzydoze-multicolor.svg" alt="logo" />
+</div>
+
+
 ```rust
 use std::thread;
 use rayon::prelude::*;
