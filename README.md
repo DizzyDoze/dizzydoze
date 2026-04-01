@@ -3,6 +3,15 @@
 </div>
 
 <div align="center">
+  <img src="https://raw.githubusercontent.com/DizzyDoze/dizzydoze/main/profile-summary-card-output/transparent/0-profile-details.svg"></img>
+  <img src="https://raw.githubusercontent.com/DizzyDoze/dizzydoze/main/profile-summary-card-output/transparent/1-repos-per-language.svg"></img>
+  <img src="https://raw.githubusercontent.com/DizzyDoze/dizzydoze/main/profile-summary-card-output/transparent/2-most-commit-language.svg"></img>
+  <img src="https://raw.githubusercontent.com/DizzyDoze/dizzydoze/main/profile-summary-card-output/transparent/3-stats.svg"></img>
+  <img src="https://raw.githubusercontent.com/DizzyDoze/dizzydoze/main/profile-summary-card-output/transparent/4-productive-time.svg"></img>
+</div>
+
+
+<div align="center">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/DizzyDoze/DizzyDoze/output/github-contribution-grid-snake-dark.svg" />
     <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/DizzyDoze/DizzyDoze/output/github-contribution-grid-snake.svg" />
